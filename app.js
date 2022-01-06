@@ -1,24 +1,14 @@
-const div = document.createElement('div')
-div.className = "parent"
-div.innerText = "Hello World !"
 
-const img = document.createElement('img')
-img.id = "photo"
-img.src = "index.js"
-img.alt = "photo"
+// 클래스명이 photo-item 인 요소 검색
+const photos = document.querySelectorAll('.photo-item')
+console.log(photos)
 
-const p = document.createElement('p')
-p.className = "summary"
-p.innerText = "this is summary !"
+// 클래스명이 photo-item 이고, 하위요소가 img 태그인 요소 검색
+const imgs = document.querySelectorAll('.photo-item img')
+console.log(imgs)
 
-div.append(img, p)
+console.log(imgs[0].src);
 
-
-const photo = document.querySelector('#photo')
-console.log(photo);
-
-const root = document.getElementById('root')
-root.appendChild(div)
-
-const photo2 = document.querySelector('#photo')
-console.log(photo2);
+for (let img of imgs) {
+  console.log(img);
+}
