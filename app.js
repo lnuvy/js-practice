@@ -14,11 +14,11 @@ p.innerText = "this is summary !"
 div.append(img, p)
 
 
-const photo = document.getElementById('photo')
+const photo = document.querySelector('#photo')
 console.log(photo);
 
 const root = document.getElementById('root')
 root.appendChild(div)
 
-const photo2 = document.getElementById('photo')
+const photo2 = document.querySelector('#photo')
 console.log(photo2);
