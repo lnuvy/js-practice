@@ -1,8 +1,7 @@
+const imgs = document.getElementsByTagName('img')
 
-const photos = document.getElementsByClassName('photo-item')
+console.log(imgs);
 
-console.log(photos);
-
-for (let photo of photos) {
-  console.log(photo);
+for (let img of imgs) {
+  console.log(img);
 }
