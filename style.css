@@ -1,0 +1,19 @@
+/* #photo-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  border: 1px solid black;
+} */
+
+.contents{
+  background: tan;
+  padding: 15px;
+  width: 300px;
+  height: 100px;
+  margin: 100px auto;
+  line-height: 100px;
+  text-align: center;
+  color:white;
+  font-weight:bold;
+  font-size: 1.5rem;
+  border-radius: 15px;
+}
