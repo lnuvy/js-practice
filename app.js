@@ -1,6 +1,6 @@
-function popup() {
-  alert('팝업창')
-  popupBtn.removeEventListener('click', popup) // 1회 이후 이벤트를 제거
+function popup(e) {  // 변수이름은 주로 e, evt, event 로 사용
+  console.log(e);
+  console.log(e.target);
 }
 
 const popupBtn = document.getElementById('popup')
