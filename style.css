@@ -17,3 +17,15 @@
   font-size: 1.5rem;
   border-radius: 15px;
 }
+
+.circle {
+  all: unset;
+  position: absolute;
+  left: 500px;
+  width: 200px;
+  height: 70px;
+  text-align: center;
+  background: skyblue;
+  border-radius: 50%;
+  transition: all ease 2.5s;
+}
