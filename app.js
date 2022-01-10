@@ -6,31 +6,30 @@ const colors = ['orange', 'blue', 'brown', 'green', 'red', 'skyblue', 'tan']
 
 function addColors(colors) {
   for (let color of colors) {
-    const item = `<div class="color-item">${color}</div>`
+    const item = `<div class='color-item'>${color}</div>`
     colorList.innerHTML += item
   }
 }
 
 function typeColor(e) {
-  const targetValue = e.target.value
-  console.log(targetValue);
+  console.log(e.target.value)
 
-  if (targetValue !== '') {
-    console.log('you typed something');
+  if (e.target.value !== '') {
+    console.log('you typed something')
     colorList.classList.add('show')
   } else {
-    console.log('you didn\'t type anything');
+    console.log('you didn\'t type anything')
     colorList.classList.remove('show')
   }
 }
 
 function setColor(e) {
-  const target = e.target
-  console.log(target);
+  console.log(e.target)
 
-  if (target.className === 'color-item') {
-    const pickedColor = target.innerText
-    console.log('you picked color !', pickedColor);
+  if (e.target.className === 'color-item') {
+    const pickedColor = e.target.innerText
+    console.log('you picked color !', pickedColor)
+    colorInput.value = pickedColor
     colorList.classList.remove('show')
     colorBox.style.background = pickedColor
   }
