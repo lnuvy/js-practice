@@ -1,7 +1,11 @@
-function popup(e) {
-  const target = e.target
-  target.classList.add('circle')
+const colorBox = document.querySelector('.color-box')
+const colorInput = document.getElementById('color-input')
+console.log(colorInput);
+
+function setColor(e) {
+  console.log(e.target.value);
+
+  colorBox.style.backgroundColor = e.target.value
 }
 
-const popupBtn = document.querySelector('.popup')
-popupBtn.addEventListener('click', popup)
+colorInput.addEventListener('input', setColor)
