@@ -29,9 +29,9 @@ function setColor(e) {
   if (e.target.className === 'color-item') {
     const pickedColor = e.target.innerText
     console.log('you picked color !', pickedColor)
-    colorInput.value = pickedColor
-    colorList.classList.remove('show')
-    colorBox.style.background = pickedColor
+    colorInput.value = pickedColor // 사용자가 선택한 색상으로 입력창 화면 설정
+    colorList.classList.remove('show') // 색상목록 숨기기
+    colorBox.style.background = pickedColor // 배경색 변경
   }
 }
 
